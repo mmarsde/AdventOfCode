@@ -2,15 +2,12 @@
 {
     public static class Day1Solution
     {
-        public static int GetMaxCalorieCount(string input) => GetCalories(input).Max();
-
-        public static int GetTotalCalorieReserves(string input)
+        public static int GetTotalCalories(string input, int forElves = 1)
         {
             return
                 GetCalories(input)
                 .OrderByDescending(item => item)
-                .Take(3)
-                .ToList()
+                .Take(forElves)
                 .Sum();
         }
 

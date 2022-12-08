@@ -8,7 +8,7 @@ namespace AdventOfCode.Tests_2022
     {
 
         [Fact]
-        public void Day2Solution_CalculateWinningScore_Returns_15_FromExampleData()
+        public void Solution1_CalculateWinningScore_Returns_15_FromExampleData()
         {
             // Arrange
             var input = @"A Y
@@ -25,7 +25,7 @@ namespace AdventOfCode.Tests_2022
         }
 
         [Fact]
-        public void Day2Solution_CalculateWinningScore_Returns_14531_FromInputFileData()
+        public void Solution1_CalculateWinningScore_Returns_14531_FromInputFileData()
         {
             // Arrange
             var input = ImportHelpers.ReadFile("day2.txt");

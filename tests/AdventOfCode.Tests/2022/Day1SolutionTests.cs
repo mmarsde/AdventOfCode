@@ -7,7 +7,7 @@ namespace AdventOfCode.Tests._2022
     public class Day1SolutionTests
     {
         [Fact]
-        public void Day1Solution_GetMaxCalorieCount_Returns_24000_From_ExampleData()
+        public void Solution1_GetMaxCalorieCount_Returns_24000_From_ExampleData()
         {
             // Arrange
             var input = @"1000
@@ -29,14 +29,14 @@ namespace AdventOfCode.Tests._2022
             var expected = 24000;
 
             // Act
-            var result = Day1Solution.GetMaxCalorieCount(input);
+            var result = Day1Solution.GetTotalCalories(input);
 
             // Assert
             Assert.Equal(expected, result);
         }
 
         [Fact]
-        public void Day1Solution_GetMaxCalorieCount_Returns_73211_From_InputFileData()
+        public void Solution1_GetMaxCalorieCount_Returns_73211_From_InputFileData()
         {
             // Arrange
             var file = Path.Combine("Inputs", "day1.txt");
@@ -45,14 +45,14 @@ namespace AdventOfCode.Tests._2022
             var expected = 73211;
 
             // Act
-            var result = Day1Solution.GetMaxCalorieCount(input);
+            var result = Day1Solution.GetTotalCalories(input);
 
             // Assert
             Assert.Equal(expected, result);
         }
 
         [Fact]
-        public void Day1Solution_GetTotalCalorieReserves_Returns_45000_From_ExampleData()
+        public void Solution2_GetTotalCalorieReserves_Returns_45000_From_ExampleData()
         {
             // Arrange
             var input = @"1000
@@ -74,14 +74,14 @@ namespace AdventOfCode.Tests._2022
             var expected = 45000;
 
             // Act
-            var result = Day1Solution.GetTotalCalorieReserves(input);
+            var result = Day1Solution.GetTotalCalories(input, 3);
 
             // Assert
             Assert.Equal(expected, result);
         }
 
         [Fact]
-        public void Day1Solution_GetTotalCalorieReserves_Returns_213958_From_InputFileData()
+        public void Solution2_GetTotalCalorieReserves_Returns_213958_From_InputFileData()
         {
             // Arrange
             var input = ImportHelpers.ReadFile("day1.txt");
@@ -89,7 +89,7 @@ namespace AdventOfCode.Tests._2022
             var expected = 213958;
 
             // Act
-            var result = Day1Solution.GetTotalCalorieReserves(input);
+            var result = Day1Solution.GetTotalCalories(input, 3);
 
             // Assert
             Assert.Equal(expected, result);
