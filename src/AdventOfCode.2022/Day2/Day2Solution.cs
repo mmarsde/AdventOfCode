@@ -20,9 +20,9 @@
                 .ToArray();
         }
 
-        private static int OutcomeMultiplier(int player, int oponent)
+        private static int OutcomeMultiplier(int player, int opponent)
         {
-            var difference = player - oponent;
+            var difference = player - opponent;
 
             return difference switch
             {
@@ -31,6 +31,5 @@
                 _ => difference
             } + 1;
         }
-
     }
 }
