@@ -1,4 +1,5 @@
 using AdventOfCode._2022.Day1;
+using AdventOfCode._2022.Helpers;
 using Xunit;
 
 namespace AdventOfCode._2022.Tests.Day1
@@ -83,8 +84,7 @@ namespace AdventOfCode._2022.Tests.Day1
         public void Day1Solution_GetTotalCalorieReserves_Returns_213958_From_InputFileData()
         {
             // Arrange
-            var file = Path.Combine("Inputs", "day1.txt");
-            var input = File.ReadAllText(file);
+            var input = ImportHelpers.ReadFile("day1.txt");
 
             var expected = 213958;
 
