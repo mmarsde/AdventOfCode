@@ -1,8 +1,8 @@
 using AdventOfCode._2022.Day1;
-using AdventOfCode._2022.Helpers;
+using AdventOfCode.Helpers;
 using Xunit;
 
-namespace AdventOfCode._2022.Tests.Day1
+namespace AdventOfCode.Tests._2022
 {
     public class Day1SolutionTests
     {

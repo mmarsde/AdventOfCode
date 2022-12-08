@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>AdventOfCode._2022.Tests</RootNamespace>
+    <RootNamespace>AdventOfCode.Tests</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AdventOfCode.2022\AdventOfCode.2022.csproj" />
+    <ProjectReference Include="..\..\src\AdventOfCode\AdventOfCode.csproj" />
   </ItemGroup>
 
 </Project>

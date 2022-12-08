@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode._2022.Helpers
+﻿namespace AdventOfCode.Helpers
 {
     public static class ImportHelpers
     {
