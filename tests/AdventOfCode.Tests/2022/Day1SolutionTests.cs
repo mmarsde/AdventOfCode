@@ -1,5 +1,6 @@
 using AdventOfCode._2022.Day1;
 using AdventOfCode.Helpers;
+using Shouldly;
 using Xunit;
 
 namespace AdventOfCode.Tests._2022
@@ -32,7 +33,7 @@ namespace AdventOfCode.Tests._2022
             var result = Day1Solution.GetTotalCalories(input);
 
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
 
         [Fact]
@@ -48,7 +49,7 @@ namespace AdventOfCode.Tests._2022
             var result = Day1Solution.GetTotalCalories(input);
 
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
 
         [Fact]
@@ -77,7 +78,7 @@ namespace AdventOfCode.Tests._2022
             var result = Day1Solution.GetTotalCalories(input, 3);
 
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
 
         [Fact]
@@ -92,7 +93,7 @@ namespace AdventOfCode.Tests._2022
             var result = Day1Solution.GetTotalCalories(input, 3);
 
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
     }
 }

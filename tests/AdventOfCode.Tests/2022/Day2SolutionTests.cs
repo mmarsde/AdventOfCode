@@ -1,5 +1,6 @@
 ﻿using AdventOfCode._2022.Day2;
 using AdventOfCode.Helpers;
+using Shouldly;
 using Xunit;
 
 namespace AdventOfCode.Tests_2022
@@ -21,7 +22,7 @@ namespace AdventOfCode.Tests_2022
             var result = Day2Solution.CalculateScore(input);
             
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
 
         [Fact]
@@ -36,7 +37,7 @@ namespace AdventOfCode.Tests_2022
             var result = Day2Solution.CalculateScore(input);
 
             // Assert
-            Assert.Equal(expected, result);
+            result.ShouldBe(expected);
         }
     }
 }
